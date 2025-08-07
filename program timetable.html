@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #aa9999;
+        }
+        .header {
+            background-color: #fb0e0e; /* Dark red/purple from the image */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            vertical-align: top;
+            font-size: 14px;
+        }
+        th {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .day-label {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .showing-items {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Academic Timetable
+    </div>
+
+    <div class="showing-items">
+        Showing 1-6 of 6 items.
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-label">Mon</td>
+                <td>24SC2006-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24SC2006-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24AD2103-<br>P - S-1<br>RoomNo-<br>HC-15A</td>
+                <td>24AD2103-<br>P - S-1<br>RoomNo-<br>HC-15A</td>
+                <td>-</td>
+                <td>-</td>
+                <td>24AD2001-<br>P - S-3<br>RoomNo-<br>HC-15C</td>
+                <td>24AD2001-<br>P - S-3<br>RoomNo-<br>HC-15C</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-label">Tue</td>
+                <td>24CS2202-<br>P - S-1<br>RoomNo-<br>HC-15C</td>
+                <td>24CS2202-<br>P - S-1<br>RoomNo-<br>HC-15C</td>
+                <td>24MT2019-<br>L - S-4<br>RoomNo-<br>H103</td>
+                <td>24MT2019-<br>L - S-4<br>RoomNo-<br>H103</td>
+                <td>24SC2006-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24SC2006-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24AD2001-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-label">Wed</td><td>24AD2001-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24AD2001-<br>L - S-3<br>RoomNo-<br>H102</td>
+                <td>24CS2202-<br>L - S-1<br>RoomNo-<br>H102</td>
+                <td>24CS2202-<br>L - S-1<br>RoomNo-<br>H102</td>
+                <td>24DCS01-<br>L - S-4<br>RoomNo-<br>H103</td>
+                <td>24UC0022-<br>P - S-3<br>RoomNo-<br>H102</td>
+                <td>24UC0022-<br>P - S-3<br>RoomNo-<br>H102</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-label">Thu</td>
+                <td>24DCS01-<br>S - S-4<br>RoomNo-<br>HC-15A</td>
+                <td>24DCS01-<br>S - S-4<br>RoomNo-<br>HC-15A</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>24DCS01-<br>S - S-4<br>RoomNo-<br>HC-15A</td>
+                <td>24DCS01-<br>S - S-4<br>RoomNo-<br>HC-15A</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-label">Fri</td>
+                <td>24AD2103-<br>L - S-1<br>RoomNo-H-<br>003</td>
+                <td>24AD2103-<br>L - S-1<br>RoomNo-H-<br>003</td>
+                <td>24MT2019-<br>T - S-4<br>RoomNo-<br>H103</td>
+                <td>24MT2019-<br>T - S-4<br>RoomNo-<br>H103</td>
+                <td>24CS2202-<br>L - S-1<br>RoomNo-<br>H102</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>24SP2114-<br>S - S-1<br>RoomNo-<br>H-004</td>
+                <td>24SP2114-<br>S - S-1<br>RoomNo-<br>H-004</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-label">Sat</td>
+                <td>23UC0013-<br>S - S-3<br>RoomNo-<br>H102</td>
+                <td>23UC0013-<br>S - S-3<br>RoomNo-<br>H102</td>
+                <td>24SC2006-<br>P - S-3<br>RoomNo-<br>HC-15C</td>
+                <td>24SC2006-<br>P - S-3<br>RoomNo-<br>HC-15C</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>24AD2103-<br>L - S-1<br>RoomNo-<br>H-107</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
