@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>University Portal</title>
+<style>
+  body {
+    font-family: monospace, monospace;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+  }
+  header {
+    background: #a12222;
+    color: white;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: normal;
+  }
+  header a.login {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+  }
+  .left, .right {
+    width: 180px;
+  }
+  .center {
+    width: 500px;
+    position: relative;
+  }
+  .icon-text {
+    color: #5a1a1a;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .count {
+    font-size: 13px;
+    color: #275284;
+    margin-top: 3px;
+    display: block;
+  }
+  /* Left and Right lists */
+  .left .item, .right .item {
+    margin-bottom: 45px;
+  }
+  .left .icon, .right .icon {
+    font-size: 30px;
+    margin-bottom: 2px;
+  }
+  /* Center circle */
+  .circle {
+    background: #fafafa;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .center-logo img {
+    width: 100%;
+  }
+  /* Radial icons with labels */
+  .radial-icon {
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    font-size: 11px;
+    color: #000;
+  }
+  /* Positions for the 12 radial icons */
+  .pos1 { top: 12%; left: 50%; transform: translateX(-50%); }
+  .pos2 { top: 25%; left: 70%; }
+  .pos3 { top: 45%; left: 82%; }
+  .pos4 { top: 65%; left: 75%; }
+  .pos5 { top: 82%; left: 57%; transform: translateX(-50%); }
+  .pos6 { top: 85%; left: 40%; transform: translateX(-50%); }
+  .pos7 { top: 65%; left: 25%; }
+  .pos8 { top: 50%; left: 15%; }
+  .pos9 { top: 37%; left: 18%; }
+  .pos10 { top: 27%; left: 35%; }
+  .pos11 { top: 22%; left: 43%; }
+  .pos12 { top: 18%; left: 48%; }
+
+  /* Icons styling - Using Unicode or emojis as placeholders */
+  .icon-exam::before { content: "👨‍💻"; font-size: 30px; display: block; }
+  .icon-employee::before { content: "👥"; font-size: 30px; display: block; }
+  .icon-payroll::before { content: "🤝"; font-size: 30px; display: block; }
+  .icon-research::before { content: "🔍"; font-size: 30px; display: block; }
+  .icon-leave::before { content: "📋"; font-size: 30px; display: block; }
+  .icon-obe::before { content: "🎓"; font-size: 30px; display: block; }
+  .icon-hr::before { content: "♿"; font-size: 30px; display: block; }
+  .icon-transport::before { content: "🚌"; font-size: 30px; display: block; }
+  .icon-hostel::before { content: "🏠"; font-size: 30px; display: block; }
+  .icon-academics::before { content: "🎓"; font-size: 30px; display: block; }
+  .icon-library::before { content: "📚"; font-size: 30px; display: block; }
+
+  /* Left and right icons using emoji placeholders */
+  .left .icon-journals::before { content: "📕"; }
+  .left .icon-workshops::before { content: "💻"; }
+  .left .icon-doctoral::before { content: "🎓"; }
+  .left .icon-nonteaching::before { content: "👥"; }
+  .left .icon-faculty-vja::before { content: "👨‍🏫"; }
+  .left .icon-faculty-hyd::before { content: "👨‍🏫"; }
+
+  .right .icon-awards::before { content: "🏆"; }
+  .right .icon-projects::before { content: "🔗"; }
+  .right .icon-faculty::before { content: "👩‍🏫"; }
+  .right .icon-students::before { content: "👨‍🎓"; }
+  .right .icon-nonteaching-vja::before { content: "👥"; }
+  .right .icon-nonteaching-hyd::before { content: "👥"; }
+
+  .left .icon, .right .icon {
+    font-size: 30px;
+    margin-bottom: 4px;
+    color: #7e1a1a;
+  }
+  .left .count, .right .count {
+    color: #275284;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="login">🔒 Login</a>
+  <a href="#" style="margin-left:auto; margin-right:20px;">About Us</a>
+  <a href="#" style="margin-right:20px;">Contact Us</a>
+</header>
+
+<div class="container">
+  <div class="left">
+    <div class="item">
+      <div class="icon icon-journals"></div>
+      <div class="count">4177</div>
+      <div class="icon-text">Journals & Conferences</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-workshops"></div>
+      <div class="count">1918</div>
+      <div class="icon-text">Workshops, Seminars & Guest Lectures</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-doctoral"></div>
+      <div class="count">211</div>
+      <div class="icon-text">Doctoral Faculty</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-nonteaching"></div>
+      <div class="count">504</div>
+      <div class="icon-text">Non-Teaching Staff</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-faculty-vja"></div>
+      <div class="count">290</div>
+      <div class="icon-text">Faculty (VJA)</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-faculty-hyd"></div>
+      <div class="count">47</div>
+      <div class="icon-text">Faculty (Hyd)</div>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="circle">
+      <img class="center-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/KL_University_logo.svg/1200px-KL_University_logo.svg.png" alt="KL University Logo" />
+      
+      <div class="radial-icon pos1 icon-exam">Exam</div>
+      <div class="radial-icon pos2 icon-employee">Employee</div>
+      <div class="radial-icon pos3 icon-payroll">Payroll</div>
+      <div class="radial-icon pos4 icon-research">Research</div>
+      <div class="radial-icon pos5 icon-leave">Leave</div>
+      <div class="radial-icon pos6 icon-obe">OBE</div>
+      <div class="radial-icon pos7 icon-hr">HR</div>
+      <div class="radial-icon pos8 icon-transport">Transport</div>
+      <div class="radial-icon pos9 icon-hostel">Hostel</div>
+      <div class="radial-icon pos10 icon-academics">Academics</div>
+      <div class="radial-icon pos11 icon-library">Library</div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="item">
+      <div class="icon icon-awards"></div>
+      <div class="count">479</div>
+      <div class="icon-text">Awards & Recognitions</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-projects"></div>
+      <div class="count">166</div>
+      <div class="icon-text">Projects & Consultancy</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-faculty"></div>
+      <div class="count">351</div>
+      <div class="icon-text">Faculty</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-students"></div>
+      <div class="count">10513</div>
+      <div class="icon-text">Students</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-nonteaching-vja"></div>
+      <div class="count">399</div>
+      <div class="icon-text">Non Teaching staff (VJA)</div>
+    </div>
+    <div class="item">
+      <div class="icon icon-nonteaching-hyd"></div>
+      <div class="count">73</div>
+      <div class="icon-text">Non Teaching staff (Hyd)</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
